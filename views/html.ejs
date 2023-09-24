@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="newfileupload">
+        <form method="post" action="newfile">
+            <input type="file" class="newfile" onclick="check()" name="newfile" id="newfile">
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <!-- <script>
+        function check(){
+            const file = document.getElementById('newfile');
+
+            const y=1;
+
+            var filepath  = file.value;
+
+            var extentions = /(\.txt)$/i;
+    
+            if(!extentions.exec(filepath)){
+                y=0;
+                    
+            }
+
+            if(file.files.length > 0){
+
+                if(y==1){
+                for(const i=0;i<file.files.length;i++){
+                    const filesize = file.files.item(i).size;
+                    const newfile = math.round(filesize/1024);
+
+                    if(newfile>5120){
+                        alert("File greater then 5 mb");
+                    }
+                    else{
+                        alert("no file chosen or file no text");
+                    }
+
+                }
+                }
+                else{
+                    alert("only txt file is allowed");
+                }
+            }
+        }
+    </script> -->
+</body>
+</html>
